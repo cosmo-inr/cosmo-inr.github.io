@@ -113,7 +113,7 @@ export default function App() {
         {/* Model Architecture */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">Model Architecture</h2>
-          <img src="static/model.png" alt="COSMO-RC Model Architecture" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
+          <img src="/model.png" alt="COSMO-RC Model Architecture" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
           <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center">
             Complete pipeline of the COSMO-RC model architecture. A prior knowledge embedder with a sigmoid regularizer dynamically adjusts the parameters of the complex modulated Raised Cosine activation functions.
           </p>
@@ -162,7 +162,7 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Placeholder title="NeRF Rendered Outputs (Fig. 9)" height="h-64" />
               <video autoPlay loop muted playsInline className="w-full aspect-square object-contain bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-800">
-                <source src="static/nerf_lego.mp4" type="video/mp4" />
+                <source src="/nerf_lego.mp4" type="video/mp4" />
               </video>
               
             </div>
