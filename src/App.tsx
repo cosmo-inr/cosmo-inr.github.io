@@ -51,15 +51,15 @@ export default function App() {
           
           <div className="space-y-4">
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg font-medium text-indigo-600 dark:text-indigo-400">
-              <a href="#" className="hover:underline">Pandula Thennakoon</a>
-              <a href="#" className="hover:underline">Avishka Ranasinghe</a>
-              <a href="#" className="hover:underline">Mario De Silva</a>
-              <a href="#" className="hover:underline">Buwaneka Epakanda</a>
+              <a href="https://pandula-2000.github.io/" target="_blank" rel="noopener noreferrer" className="hover:underline">Pandula Thennakoon</a>
+              <a href="https://linkedin.com/in/avishkaranasinghe" target="_blank" rel="noopener noreferrer" className="hover:underline">Avishka Ranasinghe</a>
+              <a href="https://oneplus-2997.github.io/" target="_blank" rel="noopener noreferrer" className="hover:underline">Mario De Silva</a>
+              <a href="https://linkedin.com/in/buwaneka-epakanda-b32101262" target="_blank" rel="noopener noreferrer" className="hover:underline">Buwaneka Epakanda</a>
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg font-medium text-indigo-600 dark:text-indigo-400">
-              <a href="#" className="hover:underline">Roshan Godaliyadda</a>
-              <a href="#" className="hover:underline">Parakrama Ekanayake</a>
-              <a href="#" className="hover:underline">Vijitha Herath</a>
+              <a href="https://scholar.google.com/citations?user=6_XOJbsAAAAJ&hl" target="_blank" rel="noopener noreferrer" className="hover:underline">Roshan Godaliyadda</a>
+              <a href="https://scholar.google.com/citations?user=uJvb7zwAAAAJ&hl" target="_blank" rel="noopener noreferrer" className="hover:underline">Parakrama Ekanayake</a>
+              <a href="https://scholar.google.com/citations?user=f5h5ByUAAAAJ&hl" target="_blank" rel="noopener noreferrer" className="hover:underline">Vijitha Herath</a>
             </div>
             <p className="text-zinc-600 dark:text-zinc-400">
               Department of Electrical and Electronic Engineering<br/>
@@ -71,15 +71,30 @@ export default function App() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 pt-4">
-            <a href="#" className="flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors">
+            <a 
+              href="https://arxiv.org/abs/2505.11640v3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
+            >
               <FileText size={18} />
               Paper
             </a>
-            <a href="#" className="flex items-center gap-2 px-6 py-2.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-full font-medium hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
+            <a 
+              href="https://github.com/Pandula-2000/COSMO-INR" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-full font-medium hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            >
               <Github size={18} />
               Code
             </a>
-            <a href="#" className="flex items-center gap-2 px-6 py-2.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-full font-medium hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
+            <a 
+              href="https://drive.google.com/file/d/11oOXJa-Wgppzd6otq96nAVRn7TFt1kGm/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-full font-medium hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+            >
               <Play size={18} />
               Colab
             </a>
@@ -129,10 +144,8 @@ export default function App() {
             <p className="text-zinc-700 dark:text-zinc-300">
               COSMO-RC consistently achieves the highest performance on the Kodak dataset, averaging <strong>41.24 dB PSNR</strong>, significantly exceeding the nearest counterpart (INCODE) by +5.67 dB. It shows clear improvements in clarity and converges faster while maintaining stability.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Placeholder title="Kodak Dataset Statistics (Fig. 4)" height="h-64" />
-              <Placeholder title="Visual Comparison - Kodak Image 20 (Fig. 5)" height="h-64" />
-            </div>
+            <img src="/Wheel.png" alt="Kodak Dataset Statistics (Fig. 4)" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
+            <img src="/Recons_K20.png" alt="Visual Comparison - Kodak Image 20 (Fig. 5)" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
           </div>
 
           {/* Denoising */}
@@ -141,7 +154,7 @@ export default function App() {
             <p className="text-zinc-700 dark:text-zinc-300">
               Evaluated on the DIV2K dataset with photon noise, COSMO-RC surpasses SOTA methods with a <strong>+0.46 dB PSNR increase</strong> over INCODE. Visual observations confirm that COSMO-RC preserves image colors and structural integrity much better than existing methods.
             </p>
-            <Placeholder title="Denoising Visual Results (Fig. 6)" height="h-64" />
+            <img src="/denoising.png" alt="Denoising Visual Results (Fig. 6)" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
           </div>
 
           {/* Super Resolution */}
@@ -150,21 +163,91 @@ export default function App() {
             <p className="text-zinc-700 dark:text-zinc-300">
               For 2×, 4×, and 6× super-resolution tasks on the DIV2K dataset, COSMO-RC surpasses SOTA methods by a considerable margin in both PSNR and SSIM. It yields the sharpest details while preserving smoothness and original color contrast.
             </p>
-            <Placeholder title="6x Super-Resolution Comparison (Fig. 13)" height="h-64" />
+            <img src="/4xSupRes.png" alt="4x Super-Resolution Comparison" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
+          </div>
+
+          {/* Inpainting */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">4. Image Inpainting</h3>
+            <p className="text-zinc-700 dark:text-zinc-300">
+              COSMO-RC demonstrates superior capability in reconstructing missing information in corrupted images, maintaining structural coherence and texture details better than baseline methods.
+            </p>
+            <img src="/inpainting.png" alt="Inpainting Visual Results" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
+          </div>
+
+          {/* 3D Shape Reconstruction */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">5. 3D Shape Reconstruction</h3>
+            <p className="text-zinc-700 dark:text-zinc-300">
+              When applied to 3D shape representation tasks, COSMO-RC accurately captures high-frequency geometric details and complex topologies, as demonstrated on the Stanford Lucy model.
+            </p>
+            <img src="/Lucy.png" alt="3D Shape Reconstruction - Stanford Lucy" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
           </div>
 
           {/* NeRF */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold">4. Neural Radiance Fields (NeRF)</h3>
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold">6. Neural Radiance Fields (NeRF)</h3>
             <p className="text-zinc-700 dark:text-zinc-300">
               Integrated into a NeRF framework for novel-view synthesis on the LEGO dataset, COSMO-RC preserves fine structural details (e.g., chain-drive sprocket gaps) accurately. It achieves an average PSNR of <strong>29.50 dB</strong>, marking a substantial +3.45 dB improvement over the second-best approach.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Placeholder title="NeRF Rendered Outputs (Fig. 9)" height="h-64" />
+
+            {/* PSNR Table */}
+            <div className="overflow-x-auto py-4">
+              <table className="w-full max-w-md mx-auto text-sm text-left text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+                <thead className="text-xs text-zinc-700 uppercase bg-zinc-50 dark:bg-zinc-800/50 dark:text-zinc-300 border-b border-zinc-200 dark:border-zinc-800">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">Method</th>
+                    <th scope="col" className="px-6 py-3 text-right">PSNR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                    <td className="px-6 py-3">Gauss</td>
+                    <td className="px-6 py-3 text-right">24.42</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                    <td className="px-6 py-3">ReLU + P.E.</td>
+                    <td className="px-6 py-3 text-right">24.71</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                    <td className="px-6 py-3">WIRE</td>
+                    <td className="px-6 py-3 text-right">25.26</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                    <td className="px-6 py-3">SIREN</td>
+                    <td className="px-6 py-3 text-right">25.89</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                    <td className="px-6 py-3">INCODE</td>
+                    <td className="px-6 py-3 text-right">26.05</td>
+                  </tr>
+                  <tr className="font-bold bg-zinc-50 dark:bg-zinc-800/50">
+                    <td className="px-6 py-3">COSMO-RC (Ours)</td>
+                    <td className="px-6 py-3 text-right">29.50</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-sm text-center text-zinc-500 dark:text-zinc-400 mt-3">
+                Table 1: Average PSNR (dB) on the LEGO test set.
+              </p>
+            </div>
+
+            <img src="/nerf_lego.png" alt="NeRF Rendered Outputs (Fig. 9)" className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800" />
+
+            {/* NeRF Videos Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
               <video autoPlay loop muted playsInline className="w-full aspect-square object-contain bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-800">
                 <source src="/nerf_lego.mp4" type="video/mp4" />
               </video>
-              
+              <video autoPlay loop muted playsInline className="w-full aspect-square object-contain bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-800">
+                <source src="/nerf_chair.mp4" type="video/mp4" />
+              </video>
+              <video autoPlay loop muted playsInline className="w-full aspect-square object-contain bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-800">
+                <source src="/nerf_drums.mp4" type="video/mp4" />
+              </video>
+              <video autoPlay loop muted playsInline className="w-full aspect-square object-contain bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-800">
+                <source src="/nerf_hotdog.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </section>
@@ -176,7 +259,7 @@ export default function App() {
             <pre className="bg-zinc-100 dark:bg-zinc-900 p-6 rounded-xl overflow-x-auto text-sm font-mono text-zinc-800 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800">
               <code>{`@inproceedings{thennakoon2026cosmo,
   title={COSMO-INR: COMPLEX SINUSOIDAL MODULATION FOR IMPLICIT NEURAL REPRESENTATIONS},
-  author={Thennakoon, Pandula and Ranasinghe, Avishka and De Silva, Mario and Epakanda, Buwaneka and Godaliyadda, Roshan and Ekanayake, Parakrama and Herath, Vijitha},
+  author={Pandula Thennakoon, Avishka Ranasinghe, Mario De Silva, Buwaneka Epakanda, Roshan Godaliyadda, Parakrama Ekanayake, Vijitha Herath},
   booktitle={Published as a conference paper at ICLR 2026},
   year={2026}
 }`}</code>
