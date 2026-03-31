@@ -90,7 +90,7 @@ export default function App() {
               Code
             </a>
             <a 
-              href="https://drive.google.com/file/d/11oOXJa-Wgppzd6otq96nAVRn7TFt1kGm/view?usp=drive_link" 
+              href="https://colab.research.google.com/drive/11xXzbH3ISHoxNVXx9wcXYBgHkTWiG6av" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-2.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-full font-medium hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
